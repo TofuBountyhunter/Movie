@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit_details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BuyO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LogIn.htm">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">More!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex justify-content-center form_addnew">
+            <div class="form_details col-md-5 col-lg-7 p-5 ">
+                <h4 class="mb-3 py-2 h1">Edit Movie Form</h4>
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3 ">
+                        <div class="col-sm-6">
+                            <label for="Movie_name" class="form-label">Movie/Series</label>
+                            <input type="text" class="form-control" id="Movie_name" placeholder="Movie Name" value=""
+                                required="" readonly>
+                            <div class="invalid-feedback">
+                                Movie/Series Name is Required!
+                            </div>
+
+                        </div>
+
+                        <div class="col-6">
+                            <label for="Epis" class="form-label">Episodes<span class="text-secondary">(Only For TV
+                                    series)</span></label>
+                            <div class="input-group has-validation">
+                                <input type="number" class="form-control" id="Epis" placeholder="">
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="poster" class="form-label">Uplode Movie/Series Poster</label>
+                            <div class="input-group has-validation">
+                                <input type="file" class="form-control" id="poster" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="Movies" name="paymentMethod" type="radio" class="form-check-input" checked=""
+                                    required="">
+                                <label class="form-check-label" for="Movies">Movie</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="series" name="paymentMethod" type="radio" class="form-check-input"
+                                    required="">
+                                <label class="form-check-label" for="series">TV Series</label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-6">
+                            <label for="sPrice" class="form-label">Selling Price<span class="text-secondary">
+                                    (in USD)</span></label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="sPrice" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="rPrice" class="form-label">Rent Price<span class="text-secondary">(in
+                                    USD)</span></label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="rPrice" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="release_date" class="form-label">Release Date</label>
+                            <div class="input-group has-validation">
+                                <input type="date" class="form-control" id="release_date" placeholder="" required=""
+                                    readonly>
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="rating" class="form-label">IMDB Rating</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="rating" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="director" class="form-label">Director</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="director" placeholder="Director Name"
+                                    required="" readonly>
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="writername" class="form-label">Writer</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="writername" placeholder="Writer Name"
+                                    required="" readonly>
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="P_house" class="form-label">Production House</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="P_house" placeholder="PH name" required=""
+                                    readonly>
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="state" class="form-label ">Ratings</label>
+                            <select class="form-select form-control" id="state" required="">
+                                <option value=""></option>
+                                <option>G</option>
+                                <option>M</option>
+                                <option>PG-13</option>
+                                <option>Rated-R</option>
+                                <option>Rated-X</option>
+
+                            </select>
+                            <div class="invalid-feedback">
+                                Required!
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="fake@example.com"
+                                required="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="phnum" class="form-label">Phone No.<span
+                                    class="text-secondary">(Optional)</span></label>
+                            <input type="tel" class="form-control" id="phnum" placeholder="+(123)-456-7890">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="desp" class="form-label">Movie Descreption</label>
+                            <div class="input-group has-validation">
+                                <textarea type="text" class="form-control descreption_height" id="desp" placeholder=""
+                                    required=""></textarea>
+                                <div class="invalid-feedback">
+                                    Required!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2"><button type="reset" class="btn btn-outline-danger b_detail "
+                                    data-bs-toggle="modal" data-bs-target="#Rent_modal">Cancle</button>
+                            </div>
+                            <div class="p-2"> <button type="submit" class="btn btn-outline-primary b_detail"
+                                    data-bs-toggle="modal" data-bs-target="#Buy_modal">Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class="text-center foot">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2023 Copyright:
+                <a class="" href="#">NOVA.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </main>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="validation.js"></script>
+</body>
+
+</html>

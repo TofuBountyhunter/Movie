@@ -1,0 +1,290 @@
+/* .collapse .navbar-collapse .navbar-nav{
+    display: flex !important;
+    justify-content: center !important;
+} */
+body {
+    font-family: 'Lato', sans-serif !important;
+    background-color: rgb(38, 43, 54) !important;
+    margin: 0px;
+}
+.navbar {
+    border-bottom: 5px solid rgb(23, 21, 40);
+    background-color: rgb(30, 35, 44) !important;
+    padding: 0px !important;
+}
+.navbar-nav .nav-link {
+    color: rgb(96, 104, 119) !important;
+    font-size: 20px;
+    padding: 0px 35px !important;
+    transition: color 0.3s;
+}
+.navbar-nav .active{
+    color: rgb(114, 116, 157) !important;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+    color: rgb(114, 116, 157) !important;
+    transform: scale(1.05);
+    transition-duration: 0.3s !important;
+}
+.navbar-nav .nav-link:active {
+    color: rgb(83, 85, 115) !important;
+    transform: scale(0.95);
+    transition-duration: 0.3s !important;
+}
+.navbar-brand{
+    color: rgb(96, 104, 119) !important;
+    font-size: 30px !important;
+    font-weight: bolder;
+}
+.navbar-toggler{
+    background-color:rgb(59, 62, 107)!important;
+
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0 !important;
+    align-items: center;
+}
+.bottom_nav a{
+    color: rgb(114, 116, 157) !important;
+    text-decoration: none !important;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.bottom_nav a:hover{
+    background-color: rgb(79, 79, 84);
+    transition-duration: 0.3s;
+}
+.bottom_active{
+    background-color: rgb(12, 9, 71);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+/* //////////////////////////////////////////////////////// */
+.buttons button{
+    width: 100px !important;
+}
+
+.carousel-fade{
+    margin-top: 60px !important;
+}
+
+.captions_text{
+    width: 57%;
+    text-align: left !important;
+    left: 20px !important;
+    top: 40px !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+/* .carousel_size{
+    height: auto;
+
+} */
+
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: -1 !important;
+    transition: opacity 0.1s linear !important;
+
+}
+.info_font_size{
+    font-size: 14px !important;
+}
+
+#titl{
+    margin-top: 70px;
+    margin-bottom: 35px;
+    color: rgb(114, 116, 157);
+    font-weight: bolder;
+    font-size: 30px;
+    /* position: relative;
+    left: 0px; */
+    width: 400px;
+}
+.container{
+    margin-bottom:20px ;
+}
+.card {
+    border: 2px solid rgb(13, 27, 45) !important;
+    border-radius: 0px !important;
+    background-color: rgb(13, 27, 45) !important;
+    transition: all 0.2s linear 0s;
+    margin: 0px !important;
+    margin-bottom: 40px !important;
+    width: 180px !important;  
+    height: 300px !important;    
+}
+.card-img-top{
+    width: 176px !important; 
+    height: 230px !important;
+}
+@media(max-width:475px){
+    .card {
+        width: 150px !important;  
+        height: 270px !important;    
+    }
+    .card-img-top{
+        width: 146px !important; 
+        height: 200px !important;
+    }
+}
+@media(max-width:372px){
+    .card {
+        width: 250px !important;  
+        height: 420px !important;    
+    }
+    .card-img-top{
+        width: 246px !important; 
+        height: 350px !important;
+    }
+}
+
+.card:hover {
+    box-shadow: 0px 0px 40px rgb(4, 20, 48);
+    transform: scale(1.05);
+}
+
+.card:active {
+    box-shadow: 0px 0px 40px rgb(4, 20, 48);
+    transform: scale(0.95);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color :rgb(114, 116, 157) !important;
+}
+
+.card-body {
+    color: rgb(114, 116, 157) !important;
+    text-align: center;
+}
+
+.card-body ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.card-body ul li {
+    font-size: 14px;
+}
+/* .card-body .text-primary {
+    color: #007bff;
+    font-weight: bold;
+} */
+
+footer{
+    background-color: rgb(30, 35, 44) !important;
+    border-top: 5px solid rgb(23, 21, 40);
+    margin-top: 40px;
+}
+.foot{
+
+    font-size: 12px;
+    color: rgb(96, 104, 119) !important;
+}
+/* /////////custom scrollbar in css///////////// */
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(104, 104, 104);
+    border-radius: 20px; 
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background-color:rgb(89, 89, 89); /* Change to your desired thumb color on hover */
+}
+  
+/* //////////////////////////////////////////////////// */
+.content_container{
+    margin: auto;
+    margin-top:100px;
+    margin-bottom: 0px;
+    padding: 40px 40px;
+    background-color: rgba(255, 253, 254, 0.074);
+    width: 1400px;
+    height: auto;
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.Hedaer_detail{
+    font-size: 55px !important;
+    /* font-weight: bolder !important; */
+}
+.b_detail{
+    margin-top: 20px !important;
+    width: 100px  !important;
+}
+#addd_button{
+    width: 130px !important;
+}
+.sizing{
+    font-size: 13px;
+}
+/* //////////////////////////////-details end-//////////////////////////////// */
+
+.form_addnew{
+    margin-top: 100px !important;
+    color: rgb(255, 255, 255);
+}
+.form_details{
+    background-color: rgba(255, 253, 254, 0.074) !important;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+.descreption_height{
+    height: 150px !important;
+}
+.form-control{
+    background-color: rgba(255, 255, 255, 0.686) !important;
+}
+/* //////////////////////////////-Add new end-//////////////////////////////// */
+
+/* //////////////////////////////-dashboard-//////////////////////////////// */
+.dash_container{
+    margin-top: 100px !important;
+}
+
+/* //////////////////////////////-dashboard_end-//////////////////////////////// */
+
+.content_container2{
+    margin: auto;
+    margin-top:150px;
+    margin-bottom: 35px;
+    padding: 40px 40px;
+    background-color: rgba(255, 255, 255, 0.839);
+    color: rgb(114, 116, 157);
+    width: 400px;
+    height: auto;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
